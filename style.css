@@ -1,0 +1,14 @@
+.box {
+    background-color: gray;
+    border-color: black;
+    border-width: 0.1em;
+    border-style: solid;
+    width: 100px;
+    height: 100px
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 20px [col-start]); */
+
+}
