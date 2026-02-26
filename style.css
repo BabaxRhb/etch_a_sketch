@@ -6,17 +6,32 @@
     background-color: black;
 }
 
+.container{
+    width: fit-content;
+    position: relative;
+}
+
 .box {
     background-color: white;
     border-color: black;
     border-width: 0.1em;
     border-style: solid;
     width: 10em;
-    height: 10em
+    height: 10em;
+    z-index: 1;
 }
 
 .box:hover {
     background-color: grey;
+}
+
+.trail {
+    background-color: black;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
 }
 
 .row {

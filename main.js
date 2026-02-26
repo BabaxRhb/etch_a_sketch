@@ -15,5 +15,13 @@ const createGrid = (row, col) => {
 
 const row = 4;
 const column = 4;
-
 createGrid(row, column);
+
+document.addEventListener("mousemove", (e) => {
+    const trail = document.createElement("div");
+    trail.classList.add("trail");
+    container.appendChild(trail);
+    trail.style.left = e.clientX - trail.offsetWidth + "px";
+    trail.style.top = e.clientY - trail.offsetHeight + "px";
+    setTimeout(() => trail.remove(), 100);
+});
